@@ -28,22 +28,22 @@ msgstr ""
 #. module: vote
 #: field:vote.config.line,action:0
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #. module: vote
 #: selection:vote.config.line,action:0
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #. module: vote
 #: field:vote.model,vote_average:0
-msgid "Average vote"
-msgstr ""
+msgid "Average feedback"
+msgstr "Moyenne des avis"
 
 #. module: vote
 #: field:vote.vote,comment:0
 msgid "Comment"
-msgstr ""
+msgstr "Commentaires"
 
 #. module: vote
 #: model:ir.model,name:vote.model_community_config_settings
@@ -75,13 +75,13 @@ msgstr ""
 #: field:vote.type,create_date:0
 #: field:vote.vote.line,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "Créé le"
 
 #. module: vote
 #: field:res.partner,vote_evaluated_id:0
 #: field:vote.vote,evaluated_object_ids:0
-msgid "Evaluated"
-msgstr ""
+msgid "Rated"
+msgstr "Commenté"
 
 #. module: vote
 #: field:vote.category,id:0
@@ -111,7 +111,7 @@ msgstr ""
 #: field:vote.vote,write_uid:0
 #: field:vote.vote.line,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "Dernière MAJ par"
 
 #. module: vote
 #: field:vote.config.line,write_date:0
@@ -120,7 +120,7 @@ msgstr ""
 #: field:vote.vote,write_date:0
 #: field:vote.vote.line,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "MAJ le"
 
 #. module: vote
 #: view:community.config.settings:vote.view_community_configuration_vote
