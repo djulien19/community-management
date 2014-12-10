@@ -39,7 +39,7 @@ class marketplace_announcement_category(osv.osv):
     _description = 'Offers/Wants Categories'
     _inherit = ['vote.category','base.recursive.model']
     _columns = {
-        'name': fields.char('Category Name', required=True, size=64, translate=True),
+        'name': fields.char('Category Name', required=True, size=25, translate=True),
         'parent_id': fields.many2one('marketplace.announcement.category', 'Parent', select=True, ondelete='cascade'),
         'child_ids': fields.one2many('marketplace.announcement.category', 'parent_id', 'Childs'),
         'sequence': fields.integer('Sequence'),
@@ -57,7 +57,7 @@ class marketplace_tag(osv.osv):
     _name = 'marketplace.tag'
     _description = 'Tag'
     _columns = {
-        'name': fields.char('Tag', required=True, size=64, translate=True),
+        'name': fields.char('Tag', required=True, size=20, translate=True),
         'category_id': fields.many2one('marketplace.announcement.category', 'Category', ondelete='cascade', required=True),
         'partner_ids': fields.many2many('res.partner', 'res_partner_marketplace_tag_rel', 'tag_id', 'partner_id', 'Partners'),
     }
