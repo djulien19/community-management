@@ -176,7 +176,7 @@ class marketplace_announcement(osv.osv):
         'address': fields.function(_get_address, type="char", size=512, string="Where", store=True, readonly=True),
         'street': fields.char('Street', size=128),
         'street2': fields.char('Street2', size=128),
-        'zip': fields.char('Zip', change_default=True, size=24),
+        'zip': fields.char('Zip', change_default=True, size=10),
         'city': fields.char('City', size=128),
         'state_id': fields.many2one("res.country.state", 'State'),
         'country_id': fields.many2one('res.country', 'Country'),
